@@ -23,7 +23,7 @@ $pkg = (object)$context->data?->pkg;
 
 <section class="trending pt-6 pb-0 bg-lgrey">
     <div class="container">
-        <form id="confirmform" class="mb-2" method="post"  action="<?php echo BASEURI . route('requestPay'); ?>">
+        <form id="confirmform" class="mb-2" method="post"  action="<?php echo BASEURI . route('sendRequestForBookingApi'); ?>">
             <div class="row">
                 <div class="col-lg-8 mb-4">
                     <div class="payment-book">
@@ -211,6 +211,7 @@ $pkg = (object)$context->data?->pkg;
 </section>
 <?php
 // pkAjax_form("#confirmbtn", "#confirmform", "#res");
+send_to_server("#confirmbtn","#confirmform","commonCallbackHandler");
 ?>
 <script>
     // Function to update the total amount

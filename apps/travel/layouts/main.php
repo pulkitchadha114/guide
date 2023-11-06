@@ -17,7 +17,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="/<?php echo STATIC_URL; ?>/tour/assets/fonts/line-icons.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+    <script>
+        function swalert(obj) {
+            Swal.fire(
+                obj.title,
+                obj.msg,
+                obj.icon
+            ).then(() => {
+                if (obj.gotoLink) {
+                    window.location.href = obj.gotoLink;
+                }
+            })
+        }
 
+        function commonCallbackHandler(res) {
+            if (res.success === true) {
+                swalert({
+                    title: 'Success',
+                    msg: res.msg,
+                    icon: 'success'
+                });
+                // location.reload();
+            } else if (res.success === false) {
+                swalert({
+                    title: 'Failed',
+                    msg: res.msg,
+                    icon: 'error'
+                });
+            } else {
+                swalert({
+                    title: 'Failed',
+                    msg: 'Something went wrong',
+                    icon: 'error'
+                });
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -25,8 +63,8 @@
     <div id="preloader">
         <div id="status"></div>
     </div>
-<!-- WhatsApp icon -->
-<a href="https://wa.me/+212661292350" class="whatsapp-icon" target="_blank">
+    <!-- WhatsApp icon -->
+    <a href="https://wa.me/+212661292350" class="whatsapp-icon" target="_blank">
         <img src="/<?php echo STATIC_URL; ?>/tour/assets/images/whatsapp.png" alt="WhatsApp Icon">
     </a>
 
@@ -35,19 +73,19 @@
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <a href="/<?php echo home; ?>"><img src="/<?php echo STATIC_URL; ?>/tour/assets/images/main-logo.jpg" width="200px" alt="" srcset=""></a>
             <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                            <a id="set-lang-ru" class="nav-link scrollto pk-pointer"><?php echo lang("nav")->ru ?? "Ru"; ?></a>
-                        <?php else : ?>
-                            <a id="set-lang-en" class="nav-link scrollto pk-pointer"><?php echo lang("nav")->en ?? "En"; ?></a>
-                        <?php endif; ?>
-                    
-                    <input type="hidden" class="lang" name="lang" value="">
-                    <div id="res-lang"></div>
-                    <?php
-                    pkAjax("#set-lang-en", route('setLang', ['lang' => 'en']), ".lang", "#res-lang");
-                    pkAjax("#set-lang-ru", route('setLang', ['lang' => 'ru']), ".lang", "#res-lang");
-                    ?>
-    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <a id="set-lang-ru" class="nav-link scrollto pk-pointer"><?php echo lang("nav")->ru ?? "Ru"; ?></a>
+            <?php else : ?>
+                <a id="set-lang-en" class="nav-link scrollto pk-pointer"><?php echo lang("nav")->en ?? "En"; ?></a>
+            <?php endif; ?>
+
+            <input type="hidden" class="lang" name="lang" value="">
+            <div id="res-lang"></div>
+            <?php
+            pkAjax("#set-lang-en", route('setLang', ['lang' => 'en']), ".lang", "#res-lang");
+            pkAjax("#set-lang-ru", route('setLang', ['lang' => 'ru']), ".lang", "#res-lang");
+            ?>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -59,12 +97,12 @@
                             <?php echo lang("nav")->tours; ?>
                         </a>
                         <ul class="dropdown-menu">
-                        <?php
-                                $userObj = new Model('content');
-                                $pack_cat = $userObj->filter_index(array('content_group' => 'product_category', 'is_active' => 1));
-                                // print_r($pack_cat);
+                            <?php
+                            $userObj = new Model('content');
+                            $pack_cat = $userObj->filter_index(array('content_group' => 'product_category', 'is_active' => 1));
+                            // print_r($pack_cat);
 
-                                ?>
+                            ?>
                             <?php
                             foreach ($pack_cat as $key => $pkg) :
                                 $pkg = obj($pkg);
@@ -76,14 +114,14 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?php echo lang("nav")->excursions; ?>
+                            <?php echo lang("nav")->excursions; ?>
                         </a>
                         <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/<?php echo home . route('tripOne'); ?>">Trips From Marrakech</a></li>
-                                <li><a class="dropdown-item" href="/<?php echo home . route('tripSecond'); ?>">Trips From Casablanca</a></li>
+                            <li><a class="dropdown-item" href="/<?php echo home . route('tripOne'); ?>">Trips From Marrakech</a></li>
+                            <li><a class="dropdown-item" href="/<?php echo home . route('tripSecond'); ?>">Trips From Casablanca</a></li>
                         </ul>
                     </li>
-                
+
                     <li class="nav-item">
                         <a class="nav-link" href="/<?php echo home . route('services'); ?>"><?php echo lang("nav")->services; ?></a>
                     </li>
@@ -93,13 +131,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><?php echo lang("nav")->partners; ?></a>
                     </li>
-                    
-                </ul>
-                
-                <div class="register-login d-flex align-items-center">
-                    
 
-                    <?php 
+                </ul>
+
+                <div class="register-login d-flex align-items-center">
+
+
+                    <?php
                     /* if (USER) : ?>
                                 <a href="/<?php echo home . route('logout'); ?>" class="me-3">
                                     <i class="icon-user"></i> Logout
@@ -109,8 +147,8 @@
                                     <i class="icon-user"></i> <?php echo lang("nav")->login; ?>/<?php echo lang("nav")->register; ?>
                                 </a>
                             <?php endif; */
-                            ?>
-                            <a href="#" class="nir-btn white"><?php echo lang("nav")->book; ?></a>
+                    ?>
+                    <a href="#" class="nir-btn white"><?php echo lang("nav")->book; ?></a>
                 </div>
 
             </div>
@@ -118,7 +156,7 @@
     </nav>
 
 
-    
+
     <?php import("apps/travel/pages/{$context->page}", $context); ?>
     <footer class="pt-20 pb-4" style="background-image: url(/<?php echo STATIC_URL; ?>/images/background_pattern.png)">
         <div class="section-shape top-0" style="background-image: url(/<?php echo STATIC_URL; ?>/images/shape8.png)"></div>
@@ -350,7 +388,7 @@
                                                 <a class="float-end" href="#">Lost your password?</a>
                                             </div>
                                             <div class="comment-btn mb-2 pb-2 text-center border-b">
-                                                <button type="submit" class="nir-btn w-100" id="login-btn" >Login</button>
+                                                <button type="submit" class="nir-btn w-100" id="login-btn">Login</button>
                                             </div>
                                             <p class="text-center">
                                                 Don't have an account?
@@ -359,9 +397,9 @@
                                         </form>
                                         <?php
 
-                                            pkAjax_form("#login-btn", "#contactform", "#res");
+                                        pkAjax_form("#login-btn", "#contactform", "#res");
 
-                                            ?>
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +445,7 @@
                                                     Policy?</label>
                                             </div>
                                             <div class="comment-btn mb-2 pb-2 text-center border-b">
-                                                <button type="submit" class="nir-btn w-100" id="reg-btn" >Register</button>
+                                                <button type="submit" class="nir-btn w-100" id="reg-btn">Register</button>
                                             </div>
                                             <p class="text-center">
                                                 Already have an account?
@@ -415,8 +453,8 @@
                                             </p>
                                         </form>
                                         <?php
-                                            pkAjax_form("#reg-btn", "#reg-form", "#res1");
-                                            ?>
+                                        pkAjax_form("#reg-btn", "#reg-form", "#res1");
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -430,7 +468,7 @@
 
 
     <!--<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
-    <script src="/<?php echo STATIC_URL; ?>/tour/assets/js/jquery-3.5.1.min.js"></script>
+
     <script src="/<?php echo STATIC_URL; ?>/tour/assets/js/bootstrap.min.js"></script>
     <script src="/<?php echo STATIC_URL; ?>/tour/assets/js/particles.js"></script>
     <script src="/<?php echo STATIC_URL; ?>/tour/assets/js/particlerun.js"></script>

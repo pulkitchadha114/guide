@@ -8,20 +8,20 @@ $pd = $context->data;
         <div class="container">
             <div class="breadcrumb-content text-center">
                 <h1 class="mb-3">
-                <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->title) ? $pd->title : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
-                                        <?php endif; ?> 
-                                    </h1>
+                    <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
+                        <?php echo !empty($pd->title) ? $pd->title : ''; ?>
+                    <?php else : ?>
+                        <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
+                    <?php endif; ?>
+                </h1>
                 <nav aria-label="breadcrumb" class="d-block">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->title) ? $pd->title : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
-                                        <?php endif; ?></li>
+                                <?php echo !empty($pd->title) ? $pd->title : ''; ?>
+                            <?php else : ?>
+                                <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
+                            <?php endif; ?></li>
                     </ul>
                 </nav>
             </div>
@@ -47,10 +47,10 @@ $pd = $context->data;
                 <div class="single-full-title border-b mb-2 pb-2">
                     <div class="single-title text-center">
                         <h2 class="mb-1"><?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->title) ? $pd->title : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
-                                        <?php endif; ?></h2>
+                                <?php echo !empty($pd->title) ? $pd->title : ''; ?>
+                            <?php else : ?>
+                                <?php echo !empty($pd->title_ru) ? $pd->title_ru : ''; ?>
+                            <?php endif; ?></h2>
                         <div class="rating-main">
                             <!-- <p class="mb-0 me-2 d-inline-block"><i class="icon-location-pin"></i> Greater London, United Kingdom</p>
                             <div class="rating me-2 d-inline-block">
@@ -76,10 +76,10 @@ $pd = $context->data;
                 <div class="description mb-2">
                     <h4>Description</h4>
                     <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->content) ? $pd->content : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->content_ru) ? $pd->content_ru : ''; ?>
-                                        <?php endif; ?>
+                        <?php echo !empty($pd->content) ? $pd->content : ''; ?>
+                    <?php else : ?>
+                        <?php echo !empty($pd->content_ru) ? $pd->content_ru : ''; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="tour-includes mb-4">
                     <table>
@@ -91,20 +91,20 @@ $pd = $context->data;
                             </tr>
                             <tr>
                                 <td><i class="fa fa-user pink mr-1" aria-hidden="true"></i> Min Age : <?php echo $pd->min_age; ?>+</td>
-                                <td><i class="fa fa-map-signs pink mr-1" aria-hidden="true"></i> Pickup : 
-                                <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->pickup) ? $pd->pickup : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->pickup_ru) ? $pd->pickup_ru : ''; ?>
-                                        <?php endif; ?>
-                            </td>
-                                <td><i class="fa fa-file-alt pink mr-1" aria-hidden="true"></i> Langauge - 
-                                <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
-                                            <?php echo !empty($pd->languages) ? $pd->languages : ''; ?>
-                                        <?php else : ?>
-                                            <?php echo !empty($pd->languages_ru) ? $pd->languages_ru : ''; ?>
-                                        <?php endif; ?>
-                            </td>
+                                <td><i class="fa fa-map-signs pink mr-1" aria-hidden="true"></i> Pickup :
+                                    <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
+                                        <?php echo !empty($pd->pickup) ? $pd->pickup : ''; ?>
+                                    <?php else : ?>
+                                        <?php echo !empty($pd->pickup_ru) ? $pd->pickup_ru : ''; ?>
+                                    <?php endif; ?>
+                                </td>
+                                <td><i class="fa fa-file-alt pink mr-1" aria-hidden="true"></i> Langauge -
+                                    <?php if (isset($_COOKIE['lang']) && $_COOKIE['lang'] == 'en') : ?>
+                                        <?php echo !empty($pd->languages) ? $pd->languages : ''; ?>
+                                    <?php else : ?>
+                                        <?php echo !empty($pd->languages_ru) ? $pd->languages_ru : ''; ?>
+                                    <?php endif; ?>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -113,7 +113,7 @@ $pd = $context->data;
                 <div class="description mb-4">
 
                     <div style="padding: 20px;">
-                        <a href="<?php echo BASEURI . route('booking',['pkgid'=>$pd->id]); ?>"><button type="button" class="btn btn-primary">Book Now</button></a>
+                        <a href="<?php echo BASEURI . route('booking', ['pkgid' => $pd->id]); ?>"><button type="button" class="btn btn-primary">Book Now</button></a>
                         <button type="button" class="btn btn-danger">Euro <?php echo $pd->price; ?></button>
                         <div>
                         </div>
