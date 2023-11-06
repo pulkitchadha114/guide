@@ -99,7 +99,8 @@
                 <div class="register-login d-flex align-items-center">
                     
 
-                    <?php if (USER) : ?>
+                    <?php 
+                    /* if (USER) : ?>
                                 <a href="/<?php echo home . route('logout'); ?>" class="me-3">
                                     <i class="icon-user"></i> Logout
                                 </a>
@@ -107,7 +108,8 @@
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-3">
                                     <i class="icon-user"></i> <?php echo lang("nav")->login; ?>/<?php echo lang("nav")->register; ?>
                                 </a>
-                            <?php endif; ?>
+                            <?php endif; */
+                            ?>
                             <a href="#" class="nir-btn white"><?php echo lang("nav")->book; ?></a>
                 </div>
 
