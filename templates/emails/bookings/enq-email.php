@@ -39,11 +39,11 @@ $dbobj = obj($context);
 <body>
     <div class="container email-container">
             <h1>Booking Enquiry</h1>
-            <p><b>Name:</b> <?php echo $ctx->first_name; ?></p>
-            <p><b>Email:</b> <?php echo $ctx->email; ?></p>
-            <p><b>Mobile:</b> <?php echo $ctx->mobile; ?></p>
-            <p><b>Address :</b> <?php echo $ctx->address; ?></p>
-            <p><b>Booking Date:</b> <?php echo $ctx->booking_date; ?></p>
+            <p><b>Name:</b> <?php echo $ctx->name??null; ?></p>
+            <p><b>Email:</b> <?php echo $ctx->email??null; ?></p>
+            <p><b>Mobile:</b> <?php echo $ctx->mobile??null; ?></p>
+            <p><b>Address :</b> <?php echo $ctx->address??null; ?></p>
+            <p><b>Booking Date:</b> <?php echo $ctx->booking_date??null; ?></p>
             <p><b>People:</b> <?php echo $ctx->people; ?></p>
 
            <small><a href="<?php echo BASEURI; ?>"><?php echo SITE_NAME; ?></a></small>
