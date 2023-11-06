@@ -20,5 +20,6 @@ $public_routes = [
     "/1-day-trip-to-marrakech-from-casablanca" => "Travel_sixth_trip_ctrl@index@name.sixthTrip",
     "/1-day-trip-to-rabat-from-casablanca" => "Travel_seventh_trip_ctrl@index@name.seventhTrip",
     "/save-trip" => "Travel_excursion_ctrl@save@name.tripAjax",
-    "/request-booking" => "Travel_booking_ctrl@send_email@name.sendRequestForBookingApi",
+    "/request-booking-ajax" => "Travel_booking_ctrl@send_email@name.sendRequestForBookingApi",
+    "/booking-enq-ajax" => "Travel_booking_ctrl@send_enq_email@name.sendEnqForBookingApi",
 ];

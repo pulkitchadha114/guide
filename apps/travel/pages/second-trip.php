@@ -118,48 +118,7 @@
             <div class="col-3">
                 <div class="rst_form">
                 <h3>Make a Reservation</h3>
-                <form action="">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Full name*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="email" class="form-control" placeholder="E-mail*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="number" class="form-control" placeholder="Phone*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Address*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="date" class="form-control" placeholder="Address*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="People*" aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <textarea name="" id="" cols="30" rows="10">Message</textarea>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <button class="nir-btn white">Book Now</button>
-                        </div>
-                    </div>
-                </form>
+                <?php echo render_template('common/enq-form.php',[]); ?>
             </div>
             </div>
         </div>
