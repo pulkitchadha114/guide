@@ -87,6 +87,7 @@ class Travel_booking_ctrl extends Main_ctrl
             $body = render_template('emails/bookings/request-email.php',$req);
             $mail->Body = $body;
             $mail->addAddress($req->email, "$req->email");
+            $mail->addAddress("contact@needguidemorocco.com", "$req->email");
            
             if ($mail->send()) {
                 msg_set('Requested successfully');
