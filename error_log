@@ -1,0 +1,70 @@
+[18-Oct-2023 16:10:34 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:10:34 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[18-Oct-2023 16:12:38 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[19-Oct-2023 11:17:32 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[19-Oct-2023 11:17:32 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[19-Oct-2023 14:45:24 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[19-Oct-2023 14:45:24 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:13:43 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:13:43 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:13:45 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:13:45 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:29:52 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:29:52 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:30:06 Asia/Kolkata] PHP Warning:  require_once(/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23
+[20-Oct-2023 10:30:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/webaawln/guide.webartvision.com/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/webaawln/guide.webartvision.com/vendor/autoload.php:23
+Stack trace:
+#0 /home/webaawln/guide.webartvision.com/config.php(4): require_once()
+#1 /home/webaawln/guide.webartvision.com/index.php(5): require_once('/home/webaawln/...')
+#2 {main}
+  thrown in /home/webaawln/guide.webartvision.com/vendor/autoload.php on line 23

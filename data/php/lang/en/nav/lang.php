@@ -1,0 +1,21 @@
+<?php
+$lang = array(
+    "home" => "Home",
+    "about" => "About Us",
+    "contact" => "Contact",
+    "tours" => "All Tours",
+    "excursions" => "Excursions",
+    "services" => "Services",
+    "partners" => "Partners",
+    "account" => "Account",
+    "login" => "login",
+    "register" => "Register",
+    "logout" => "logout",
+    "book"=> "Book Now",
+    "profile" => "Profile",
+    "profile_edit" => "Biodata edit",
+    "public_profile" => "Public biodata",
+    "hi" => "Hi",
+    "en" => "En",
+    "mai" => "Mai",
+);
